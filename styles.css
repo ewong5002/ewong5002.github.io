@@ -15,14 +15,13 @@ body {
 
 header {
 	position: sticky;
+	font-size: large;
+	font-size-adjust: 0.5;
 	text-align: center;
-	padding: 2;
+	padding: 4rem 0;
 	color: #116f94;
-	/* Ensures text is completely white */
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-	/* Optional shadow for better visibility */
+	text-shadow: 2px 2px 5px #000000;
 	overflow: hidden;
-	/* Ensures no content spills outside the header */
 }
 
 header h1 {

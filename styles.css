@@ -18,6 +18,7 @@ header {
 	font-size: large;
 	font-size-adjust: 0.5;
 	text-align: center;
+	margin: 2;
 	padding: 4rem 0;
 	color: #116f94;
 	text-shadow: 2px 2px 5px #000000;

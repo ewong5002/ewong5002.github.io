@@ -14,8 +14,7 @@ body {
 }
 
 header {
-	position: relative;
-	/* Allows layering of elements */
+	position: sticky;
 	text-align: center;
 	padding: 4rem 0;
 	/* Adjust padding for the content */
@@ -25,22 +24,6 @@ header {
 	/* Optional shadow for better visibility */
 	overflow: hidden;
 	/* Ensures no content spills outside the header */
-}
-
-header::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url('banner-image.png') no-repeat center center;
-	/* Replace with your photo file */
-	background-size: cover;
-	filter: brightness(0.7);
-	/* Adjust brightness here */
-	z-index: -1;
-	/* Places this layer behind the text */
 }
 
 header h1 {

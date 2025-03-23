@@ -1,4 +1,74 @@
 body {
+	font-family: 'Calibre', sans-serif;
 	margin: 0;
+	padding: 0;
 	text-align: center;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+header {
+	position: relative;
+	/* Allows layering of elements */
+	text-align: center;
+	padding: 4rem 0;
+	/* Adjust padding for the content */
+	color: rgb(255, 255, 255);
+	/* Ensures text is completely white */
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+	/* Optional shadow for better visibility */
+	overflow: hidden;
+	/* Ensures no content spills outside the header */
+}
+
+header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('banner-image.png') no-repeat center center;
+	/* Replace with your photo file */
+	background-size: cover;
+	filter: brightness(0.7);
+	/* Adjust brightness here */
+	z-index: -1;
+	/* Places this layer behind the text */
+}
+
+header h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+nav {
+	background: #2c3e50;
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+nav a {
+	color: white;
+	margin: 0 1rem;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+	color: #3673ec;
+}
+
+section {
+	margin: 2rem auto;
+	max-width: 1200px;
+	padding: 1rem;
+}
+
+h2 {
+	color: #2c3e50;
+	border-bottom: 2px solid #2c3e50;
+	padding-bottom: 0.5rem;
 }

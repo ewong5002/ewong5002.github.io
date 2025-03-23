@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!--Google Anyalitics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHZRCJ4Q4Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WHZRCJ4Q4Z');
+    </script>
+
+    <!--Emailing Capabilities-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "GqAxUNsYKl8DRLFRT",
+            });
+        })();
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Wulff - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            /* Allows layering of elements */
+            text-align: center;
+            padding: 4rem 0;
+            /* Adjust padding for the content */
+            color: rgb(255, 255, 255);
+            /* Ensures text is completely white */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+            /* Optional shadow for better visibility */
+            overflow: hidden;
+            /* Ensures no content spills outside the header */
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('banner-image.png') no-repeat center center;
+            /* Replace with your photo file */
+            background-size: cover;
+            filter: brightness(0.7);
+            /* Adjust brightness here */
+            z-index: -1;
+            /* Places this layer behind the text */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav {
+            background: #2c3e50;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #3673ec;
+        }
+
+        section {
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 1rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 0.5rem;
+        }
+
+
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .portfolio-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 1rem;
+            border-radius: 10px;
+        }
+
+        .portfolio-item h3 {
+            margin: 0 0 0.5rem;
+            color: #2c3e50;
+        }
+
+        .portfolio-item h3 a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .portfolio-item h3 a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add hover effect to portfolio items */
+        .portfolio-item {
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .portfolio-item:hover {
+            background-color: #f0f0f0;
+            /* Slightly lighter background color */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            /* Increase shadow */
+            cursor: pointer;
+            /* Change cursor to pointer */
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Matt Wulff - Portfolio</h1>
+        <p>Today’s Dreams are Tomorrow’s Reality</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" style="padding: 2rem 0;">
+        <h2 style="text-align: left; color: #2c3e50; margin-bottom: 1rem;">About Me</h2>
+        <div
+            style="max-width: 1200px; margin: 0 auto; display: flex; background: #ffffff; padding: 2rem; border-radius: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); gap: 1.5rem;">
+            <!-- Profile Image -->
+            <div
+                style="flex: 1; background: url('matt-profile.jpg') no-repeat center center; background-size: cover; border-radius: 15px; min-height: 250px;">
+            </div>
+            <!-- About Me Text -->
+            <div style="flex: 2; display: flex; flex-direction: column; justify-content: center;">
+                <p style="font-size: 1.1rem; line-height: 1.6;">
+                    Hi, I’m <strong>Matt Wulff, a Mechatronics Engineering student passionate about designing innovative
+                        solutions</strong> that merge creativity with technology. I’ve built robotic arms, 3D-printed
+                    rocket engines,
+                    and dune buggies, always pushing boundaries and solving real-world challenges. My dream is to create
+                    impactful technologies that improve lives globally. With a hands-on approach and entrepreneurial
+                    mindset, I’m committed to learning, building, and inspiring others. Let’s connect and create
+                    something extraordinary!
+                </p>
+            </div>
+        </div>
+        <!-- Logos Section -->
+        <div style="margin-top: 2rem; text-align: center;">
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <img src="logo1.png" alt="Organization 1" style="max-height: 75px; width: auto;">
+                <img src="deltahacks_logo.png" alt="Organization 2" style="max-height: 75px; width: auto;">
+                <img src="logo2.png" alt="Organization 3" style="max-height: 75px; width: auto;">
+                <img src="logo3.png" alt="Organization 4" style="max-height: 75px; width: auto;">
+                <img src="logo4.png" alt="Organization 5" style="max-height: 75px; width: auto;">
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <!-- Robotic Arms -->
+            <a href="robotic-arm.html" class="portfolio-item" style="text-decoration: none; color: inherit;">
+                <img src="robotic-arm.jpg" alt="Robotic Arm">
+                <div>
+                    <h3>Robotic Arms</h3>
+                    <p>Built three robotic arms featuring six degrees of freedom and wireless control</p>
+                </div>
+            </a>
+
+            <!-- Eloquent App -->
+            <a href="eloquently-app.html" class="portfolio-item" style="text-decoration: none; color: inherit;">
+                <img src="eloquent-app-ui1.png" alt="Eloquently App">
+                <div>
+                    <h3>Eloquently App</h3>
+                    <p>Developed an iOS app to improve communication skills by using AI feedback</p>
+                </div>
+            </a>
+
+            <!-- Drone Case -->
+            <a href="drone-case.html" class="portfolio-item" style="text-decoration: none; color: inherit;">
+                <img src="drone-case1.jpg" alt="Drone Case">
+                <div>
+                    <h3>Drone Case</h3>
+                    <p>Designed a durable, waterproof drone case capable of protecting highly sensitive drones from
+                        meter-high drops</p>
+                </div>
+            </a>
+
+            <!-- 3D Alive -->
+            <a href="3d-alive.html" class="portfolio-item" style="text-decoration: none; color: inherit;">
+                <img src="3Dalive.jpeg" alt="3D Alive">
+                <div>
+                    <h3>3D Alive</h3>
+                    <p>Founded a 3D printing and engineering consulting business providing innovative solutions for
+                        clients</p>
+                </div>
+            </a>
+
+            <!-- Anechoic Chamber -->
+            <a href="anechoic-chamber.html" class="portfolio-item" style="text-decoration: none; color: inherit;">
+                <img src="anechoic-chamber1.jpg" alt="Anechoic Chamber">
+                <div>
+                    <h3>Anechoic Chamber</h3>
+                    <p>Built an acoustic testing chamber to reduce the noise levels while testing high-payload drones
+                    </p>
+                </div>
+            </a>
+
+            <!-- Automated Compound Pharmacy -->
+            <a href="automated-compound-pharmacy.html" class="portfolio-item"
+                style="text-decoration: none; color: inherit;">
+                <img src="pharmacy-project.jpg" alt="Automated Compound Pharmacy">
+                <div>
+                    <h3>Automated Compound Pharmacy</h3>
+                    <p>Developing a system for precise, automated dispensing of pharmaceutical compounds. (In progress)
+                    </p>
+                </div>
+            </a>
+
+            <!-- Dune Buggy -->
+            <a href="dune-buggy.html" class="portfolio-item" style="text-decoration: none; color: inherit;">
+                <img src="dune-buggy.jpg" alt="Dune Buggy">
+                <div>
+                    <h3>Dune Buggy</h3>
+                    <p>Built a functional dune buggy using scrap materials and an old generator</p>
+                </div>
+            </a>
+
+            <!-- Random Projects -->
+            <a href="random-projects.html" class="portfolio-item" style="text-decoration: none; color: inherit;">
+                <img src="tesla-turbine.JPG" alt="Random Projects">
+                <div>
+                    <h3>Random Projects</h3>
+                    <p>A collection of personal projects, including a bunch of 3D designs, electronics, and more</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="resume"
+        style="background-color: #f4f4f4; padding: 2rem 2; border-radius: 15px; max-width: 1200px; margin: 2rem auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.);">
+        <h2 style="text-align: left; color: #2c3e50; margin-bottom: 1rem;">My Resume</h2>
+
+        <!-- Download Button at the Top -->
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+            <a href="Matt's Resume.pdf" download
+                style="background: #2c3e50; color: white; padding: 0.8rem 1.5rem; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background 0.3s;">
+                Download Resume
+            </a>
+        </div>
+
+        <div
+            style="max-width: 800px; margin: 0 auto; padding: 1rem; border-radius: 15px; background: white; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+            <!-- Embed Resume -->
+            <iframe src="Matt's Resume.pdf"
+                style="width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 5px;">
+            </iframe>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #f9f9f9; padding: 3rem 0;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2rem; color: #2c3e50; margin-bottom: 1.5rem;">Get in Touch</h2>
+            <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+                Have a question or want to work together?
+            </p>
+            <div
+                style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+
+                <!-- Contact Form -->
+                <form id="contactForm" style="text-align: left;">
+                    <label for="name"
+                        style="font-size: 1rem; font-weight: bold; display: block; margin-bottom: 0.5rem;">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name"
+                        style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;"
+                        required>
+
+                    <label for="email"
+                        style="font-size: 1rem; font-weight: bold; display: block; margin-bottom: 0.5rem;">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email"
+                        style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;"
+                        required>
+
+                    <label for="message"
+                        style="font-size: 1rem; font-weight: bold; display: block; margin-bottom: 0.5rem;">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="4"
+                        style="width: 100%; padding: 0.8rem; margin-bottom: 1.5rem; border: 1px solid #ddd; border-radius: 5px;"
+                        required></textarea>
+
+                    <button type="button" onclick="sendEmail()"
+                        style="width: 100%; background:#2c3e50; color: white; font-size: 1rem; font-weight: bold; padding: 0.8rem; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s;">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Validate fields
+            if (!name || !email || !message) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            // Send email using EmailJS
+            emailjs.send("service_wywwdek", "template_1qjp5ch", {
+                from_name: name,
+                from_email: email,
+                message: message,
+            }).then(function (response) {
+                alert("Message sent successfully! Thank you for getting in touch.");
+                document.getElementById('contactForm').reset(); // Clear the form
+            }, function (error) {
+                alert("Failed to send the message. Please try again.");
+                console.error("EmailJS Error:", error); // Log the error for debugging
+            });
+        }
+    </script>
+
+
+    <footer style="background: #2c3e50; color: white; text-align: center; padding: 2rem 0; margin-top: 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+            <!-- Motto Section -->
+            <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">Today’s Dreams are Tomorrow’s Reality
+            </p>
+
+            <!-- Social Icons -->
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+                <a href="https://www.linkedin.com/in/matthew-wulff/" target="_blank" title="LinkedIn">
+                    <img src="linkedin-icon.png" alt="LinkedIn" style="width: 30px; height: auto;">
+                </a>
+                <a href="https://detailed-grass-d59.notion.site/Matt-Wulff-Engineering-1-2c6a3372735f4f17b7393b26c1c2530e"
+                    target="_blank" title="Notion">
+                    <img src="notion-icon.png" alt="Notion" style="width: 30px; height: auto;">
+                </a>
+                <a href="https://github.com/MattttMan?tab=overview&from=2022-12-01&to=2022-12-31" target="_blank"
+                    title="GitHub">
+                    <img src="github-icon.png" alt="GitHub" style="width: 30px; height: auto;">
+                </a>
+                <a href="https://www.instagram.com/matthewdwulff/" target="_blank" title="Instagram">
+                    <img src="instagram_icon.png" alt="Istagram" style="width: 30px; height: auto;">
+                </a>
+                <a href="https://www.thingiverse.com/makeitmatt1/designs" target="_blank" title="Thingiverse">
+                    <img src="thingiverse-icon.png" alt="Thingiverse" style="width: 30px; height: auto;">
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p style="font-size: 0.9rem; margin: 0;">&copy; 2025 Matt Wulff. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>

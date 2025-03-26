@@ -1,25 +1,29 @@
-function sendEmail() {
-	const name = document.getElementById("name").value;
-	const email = document.getElementById("email").value;
-	const subject = document.getElementById("subject").value;
-	const message = document.getElementById("message").value;
+emailjs.init({
+	publicKey: "8zETn5M9XUT2QMQgO",
+});
 
-	// Validate fields
-	if (!name || !email || !subject || !message) {
-		alert("Please fill out all fields.");
+document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+	e.preventDefault();
+
+	const formData = {
+		name : document.getElementById('name').value,
+		email : document.getElementById('email').value,
+		subject : document.getElementById('subject').value,
+		message : document.getElementById('message').value,
+	};
+
+	if(Objects.values(formData).some(field => !field)) {
+		alert('Please fill all fields');
 		return;
 	}
 
-	emailjs.send("service_m88825v","template_s0ru2jk", {
-		name : name,
-		email : name,
-		subject : subject,
-		message : message,
-	}).then(function(response) {								// Confirmation message and clear form
-		alert("Email Sent!");
-		document.getElementById("contactForm").reset();
-	}, function(error) {										// Log any errors that occur
-		alert("Failed to sent the message. Please try again.");
-		console.error("EmailJS Error:", error);
+	emailjs.send("service_m88825v","template_s0ru2jk", formData)
+		.then(() => {
+			alert('Email sent!');
+			e.target.reset();
+		})
+		.catch((error) => {
+			alert('Failed to send email');
+			console.error('EmailJS Error: ', error);
 	});
-}
+});

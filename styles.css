@@ -15,14 +15,19 @@ body {
 
 /* Header Styling */
 header {
-	position: sticky;
-	font-size: large;
+	font-size: x-large;
 	font-size-adjust: 0.5;
 	text-align: center;
 	margin: 2;
 	padding: 4rem 0;
 	color: #116f94;
 	overflow: hidden;
+}
+
+.fixed {
+	position: sticky;
+	top: 0;
+	padding: 10px 16px;
 }
 
 /* Image Styling */

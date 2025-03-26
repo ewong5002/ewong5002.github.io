@@ -5,18 +5,29 @@
 	<!-- Tab Icon -->
 	<link rel="icon" src="./Images/temp_icon.jpg" type="image/x-icon">
 
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ethan Wong's Website</title>
 	<link rel="stylesheet" href="styles.css">
+
+	<!-- Email Functionality -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "8zETn5M9XUT2QMQgO",
+			});
+		})();
+	</script>
+
+	<script src=".JavaScript/email.js"></script>
 </head>
 
 <body>
-	<header>Ethan Wong's Website</header>
+	<header id="fixed">Ethan Wong's Portfolio</header>
 
 	<!-- Navigation -->
-	<ul class="nav-bar">
+	<ul class="nav-bar" id="fixed">
 		<a href="#about">About Me</a></li>
 		<a href="#projects">Projects</a></li>
 		<a href="#experience">Experience</a></li>
@@ -53,12 +64,6 @@
 				</div>
 			</a>
 		</div>
-
-		<div>
-			<a href="https://github.com/ewong5002" target="_blank">
-				<img src="./Images/github-icon.png" alt="GitHub link for ewong5002" class="icon">
-			</a>
-		</div>
 	</section>
 	
 	<!-- Experience -->
@@ -74,6 +79,38 @@
 		</div>
 	</section>
 
+	<!-- Email -->
+	<section id="contact">
+		<div>
+			<p>Interested in my resume or want to get in touch?</p>
+
+			<form id="contactForm">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Your Name" required>
+
+				<label for="subject">Subject</label>
+				<input type="text" id="subject" name="subject" placeholder="Your Subject" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Your Email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea>
+
+				<button type="button" onclick="sendEmail()">Send Message</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	 <div class="socials">
+		<a href="https://www.linkedin.com/in/ethan-wong-0521b926a/" target="_blank" title="LinkedIn">
+			<img src="./Images/linkedin-icon.png" alt="LinkedIn">
+		</a>
+		<a href="https://github.com/ewong5002" target="_blank" title="GitHub">
+			<img src="./Images/github-icon.png" alt="GitHub">
+		</a>
+	</div>
 </body>
 
 </html>

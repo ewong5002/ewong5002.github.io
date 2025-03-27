@@ -1,4 +1,4 @@
-emailjs.init({
+/*emailjs.init({
 	publicKey: "8zETn5M9XUT2QMQgO",
 });
 
@@ -26,4 +26,30 @@ document.getElementById('contactForm')?.addEventListener('submit', (e) => {
 			alert('Failed to send email');
 			console.error('EmailJS Error: ', error);
 	});
-});
+});*/
+
+function sendEmail() {
+	(function() {
+		emailjs.init("8zETn5M9XUT2QMQgO");
+	})();
+
+	var params = {
+		name : document.querySelector("#name").value,
+		email : document.querySelector("#email").value,
+		subject : document.querySelector("subject").value,
+		message : document.querySelector("message").value,
+	};
+
+	var serviceID = "service_m88825v";
+	var templateID = "template_s0ru2jk";
+
+	emailjs.send(serviceID, templateID, params)
+	.then( res => {
+		alert("Email sent!");
+		document.querySelector("#contactForm").reset();
+	})
+	.catch( error => {
+		alert("Failed to send email");
+		console.error("EmailJS Error: ", error);
+	});
+}

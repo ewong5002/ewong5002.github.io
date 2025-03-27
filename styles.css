@@ -41,7 +41,7 @@ img {
 
 /* Navigation Styling */
 nav {
-	top: 70px;
+	top: 65px;
 	padding: 8px 0;
 	list-style: none;
 	display: flex;
@@ -83,7 +83,7 @@ footer .socials {
 	display: flex;
 	justify-content: center;
 	gap: 16px;
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 }
 
 footer .socials img {

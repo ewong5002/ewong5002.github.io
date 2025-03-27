@@ -14,7 +14,7 @@ header {
 	top: 0;
 	margin: 2;
 	margin-top: 4;
-	padding: 10px 16px;
+	padding: 8px 16px;
 	color: #141616;
 	overflow: hidden;
 }
@@ -41,7 +41,7 @@ img {
 
 /* Navigation Styling */
 nav {
-	top: 65px;
+	top: 55px;
 	padding: 8px 0;
 	list-style: none;
 	display: flex;

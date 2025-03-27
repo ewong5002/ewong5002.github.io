@@ -77,14 +77,14 @@ nav a:hover {
 	object-fit: cover;
 }
 
-footer .class {
+footer .socials {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
 	margin-bottom: 16px;
 }
 
-footer .class img {
+footer .socials img {
 	width: 45 px;
 	height: auto;
 }

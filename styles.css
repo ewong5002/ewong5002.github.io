@@ -18,6 +18,7 @@ header {
 
 /* Body Styling */
 body {
+	line-height: 1.6;
 	text-align: center;
 	background-color: #fff5c3;
 	color: #000000;
@@ -32,31 +33,36 @@ img {
 /* Sticky Banner + Relative Links*/
 #fixed {
 	position: sticky;
-	top: 0;
-	padding: 10px 16px;
 	background-color: #bbbab3;
 }
 
+#fixed header {
+	top: 0;
+	padding: 10px 16px;
+}
+
 /* Navigation Styling */
-.nav-bar {
+nav {
 	top: 100px;
+	padding: 8px 0;
 	list-style: none;
 	display: flex;
 	justify-content: center;
 }
 
-.nav-bar li {
-	margin: 15px; /* Spacing Between Items */
+nav li {
+	margin: 0 15px; /* Spacing Between Items */
 }
 
-.nav-bar a {
+nav a {
 	text-decoration: none; /* Remove Underline */
 	color: #323838;
+	padding: 8px 12px;
 	font-size: 18px;
 	transition: background-color 0.3s ease; /* Hover Efeect */
 }
 
-.nav-bar a:hover {
+nav a:hover {
 	background-color: #9e9d96;
 	border-radius: 5px;
 }

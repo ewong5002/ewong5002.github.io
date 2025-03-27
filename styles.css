@@ -82,11 +82,11 @@ nav a:hover {
 footer .socials {
 	display: flex;
 	justify-content: center;
-	gap: 8px;
+	gap: 16px;
 	margin-bottom: 8px;
 }
 
 footer .socials img {
-	width: 36px;
+	width: 45px;
 	height: auto;
 }

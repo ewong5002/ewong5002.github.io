@@ -11,7 +11,9 @@ header {
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
-	margin: 4;
+	top: 0;
+	margin: 2;
+	padding: 10px 16px;
 	color: #141616;
 	overflow: hidden;
 }
@@ -36,14 +38,9 @@ img {
 	background-color: #bbbab3;
 }
 
-#fixed header {
-	top: 0;
-	padding: 10px 16px;
-}
-
 /* Navigation Styling */
 nav {
-	top: 100px;
+	top: 70px;
 	padding: 8px 0;
 	list-style: none;
 	display: flex;

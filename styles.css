@@ -8,14 +8,11 @@
 
 /* Header Styling */
 header {
-	font-size: x-large;
-	font-size-adjust: 0.5;
+	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 	margin: 2;
-	padding: 2rem 0;
 	color: #141616;
-	background-color: #bbbab3;
 	overflow: hidden;
 }
 
@@ -35,13 +32,41 @@ img {
 /* Sticky Banner + Relative Links*/
 #fixed {
 	position: sticky;
-	top: 0;
 	padding: 10px 16px;
+	background-color: #bbbab3;
 }
 
-.nav-bar {
-	margin: 1;
-	text-align: center;
+#fixed header {
+	top: 0;
+}
+
+#fixed nav {
+	top: 40px;
+}
+
+/* Navigation Styling */
+nav {
+	.nav-bar {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-bar li {
+		margin: 0 15px; /* Spacing Between Items */
+	}
+
+	.nav-bar a {
+		text-decoration: none; /* Remove Underline */
+		color: #323838;
+		font-size: 18px;
+		transition: background-color 0.3s ease; /* Hover Efeect */
+	}
+
+	.nav-bar a:hover {
+		background-color: #9e9d96;
+		border-radius: 5px;
+	}
 }
 
 .profile-pic {

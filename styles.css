@@ -32,41 +32,36 @@ img {
 /* Sticky Banner + Relative Links*/
 #fixed {
 	position: sticky;
+	top: 0;
 	padding: 10px 16px;
 	background-color: #bbbab3;
 }
 
-#fixed header {
-	top: 0;
-}
-
-#fixed nav {
-	top: 40px;
+#fixed .nav-bar {
+	top: 45px;
 }
 
 /* Navigation Styling */
-nav {
-	.nav-bar {
-		list-style: none;
-		display: flex;
-		justify-content: center;
-	}
+.nav-bar {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
 
-	.nav-bar li {
-		margin: 0 15px; /* Spacing Between Items */
-	}
+.nav-bar li {
+	margin: 0 15px; /* Spacing Between Items */
+}
 
-	.nav-bar a {
-		text-decoration: none; /* Remove Underline */
-		color: #323838;
-		font-size: 18px;
-		transition: background-color 0.3s ease; /* Hover Efeect */
-	}
+.nav-bar a {
+	text-decoration: none; /* Remove Underline */
+	color: #323838;
+	font-size: 18px;
+	transition: background-color 0.3s ease; /* Hover Efeect */
+}
 
-	.nav-bar a:hover {
-		background-color: #9e9d96;
-		border-radius: 5px;
-	}
+.nav-bar a:hover {
+	background-color: #9e9d96;
+	border-radius: 5px;
 }
 
 .profile-pic {

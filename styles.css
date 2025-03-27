@@ -79,6 +79,10 @@ nav a:hover {
 	object-fit: cover;
 }
 
+footer {
+	padding: 24px 0;
+}
+
 footer .socials {
 	display: flex;
 	justify-content: center;

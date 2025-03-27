@@ -77,8 +77,14 @@ img {
 	object-fit: cover;
 }
 
-.socials img {
-	margin: 0 15px;
-	width: 45px;
+footer .class {
+	display: flex;
+	justify-content: center;
+	gap: 0 15px;
+	margin-bottom: 16px;
+}
+
+footer .class img {
+	width: 45 px;
 	height: auto;
 }

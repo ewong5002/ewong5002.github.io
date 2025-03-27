@@ -64,6 +64,12 @@ img {
 	border-radius: 5px;
 }
 
+.icon {
+	margin: 10px auto;
+	width: 30px;
+	height: auto;
+}
+
 .profile-pic {
 	margin: 15px auto;
 	width: 120px;
@@ -71,8 +77,8 @@ img {
 	object-fit: cover;
 }
 
-.icon {
-	margin: 10px auto;
-	width: 30px;
+.socials img {
+	margin: 0 15px;
+	width: 45px;
 	height: auto;
 }

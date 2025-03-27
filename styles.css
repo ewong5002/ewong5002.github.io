@@ -38,7 +38,7 @@ img {
 }
 
 #fixed .nav-bar {
-	top: 45px;
+	top: 100px;
 }
 
 /* Navigation Styling */
@@ -49,7 +49,7 @@ img {
 }
 
 .nav-bar li {
-	margin: 0 15px; /* Spacing Between Items */
+	margin: 15px; /* Spacing Between Items */
 }
 
 .nav-bar a {
@@ -80,7 +80,7 @@ img {
 footer .class {
 	display: flex;
 	justify-content: center;
-	gap: 0 15px;
+	gap: 10px;
 	margin-bottom: 16px;
 }
 

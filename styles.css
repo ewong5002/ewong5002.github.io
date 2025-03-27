@@ -11,7 +11,7 @@ header {
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
-	margin: 2;
+	margin: 4;
 	color: #141616;
 	overflow: hidden;
 }
@@ -37,12 +37,9 @@ img {
 	background-color: #bbbab3;
 }
 
-#fixed .nav-bar {
-	top: 100px;
-}
-
 /* Navigation Styling */
 .nav-bar {
+	top: 100px;
 	list-style: none;
 	display: flex;
 	justify-content: center;

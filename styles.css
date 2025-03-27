@@ -17,15 +17,16 @@ body {
 header {
 	font-size: x-large;
 	font-size-adjust: 0.5;
+	font-weight: bold;
 	text-align: center;
 	margin: 2;
 	padding: 2rem 0;
-	color: #116f94;
+	color: #141616;
 	background-color: #bbbab3;
 	overflow: hidden;
 }
 
-.fixed {
+#fixed {
 	position: sticky;
 	top: 0;
 	padding: 10px 16px;

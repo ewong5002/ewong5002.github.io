@@ -13,6 +13,7 @@ header {
 	text-align: center;
 	top: 0;
 	margin: 2;
+	margin-top: 4;
 	padding: 10px 16px;
 	color: #141616;
 	overflow: hidden;
@@ -45,6 +46,7 @@ nav {
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 }
 
 nav li {
@@ -80,11 +82,11 @@ nav a:hover {
 footer .socials {
 	display: flex;
 	justify-content: center;
-	gap: 10px;
-	margin-bottom: 16px;
+	gap: 8px;
+	margin-bottom: 8px;
 }
 
 footer .socials img {
-	width: 45 px;
+	width: 36px;
 	height: auto;
 }

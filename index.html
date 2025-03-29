@@ -23,13 +23,20 @@
 		<a href="#projects">Projects</a></li>
 		<a href="#experience">Experience</a></li>
 		<a href="#contact">Contact</a></li>
+		<a href="./Sub-sites/EthanWong_Resume.pdf" target="_blank">Resume</a></li>
 	</nav>
 
 	<!-- About Me -->
 	 <section id="about">
 		<h1>About Me</h1>
-		<img src="./Images/selfie.jpg" alt="Photo of Ethan Wong" class="profile-pic">
-		<p>Hello! I'm Ethan, a computer engineering student at McMaster University. I am passionate about game development and innovating technologies for everyday life. Currently, I'm developing a mobile app.</p>
+		<div class="sectionBody" id="aboutBody">
+			<img src="./Images/selfie.jpg" alt="Photo of Ethan Wong" class="profile-pic">
+			<p>
+				Hello! I'm Ethan, a computer engineering student at McMaster University.<br>
+				I am passionate about game development and innovating technologies for everyday life.<br>
+				Currently, I'm developing a mobile app.
+			</p>
+		</div>
 	 </section>
 
 	<!-- Projects -->
@@ -60,7 +67,7 @@
 	<!-- Experience -->
 	<section id="experience">
 		<h1>Experience</h1>
-		<div class="experienced">
+		<div class="sectionBody">
 			<h3>McMaster Solar Car</h3>
 			<h4>September 2024 - Present</h4>
 			<p class="role">Member of Strategies Team</p>
@@ -73,7 +80,7 @@
 	<!-- Email -->
 	<section id="contact">
 		<div>
-			<p>Interested in my resume or want to get in touch?</p>
+			<p>Want to get in touch?</p>
 
 			<form id="contactForm">
 				<label for="name">Name</label>
@@ -86,7 +93,7 @@
 				<input type="email" id="email" name="email" placeholder="Your Email" required> <br>
 
 				<label for="message">Message</label>
-				<textarea id="message" name="message" placeholder="Write your message here..." cols="20" rows="4" required></textarea>
+				<textarea id="message" name="message" placeholder="Write your message here..." cols="35" rows="8" required></textarea>
 
 				<button onclick = "sendEmail()">Send Message</button>
 			</form>
@@ -95,8 +102,8 @@
 		</div>
 	</section>
 
-	<!-- Socials -->
 	 <footer>
+		<!-- Social Links -->
 		<div class="socials">
 			<a href="https://www.linkedin.com/in/ethan-wong-0521b926a/" target="_blank" title="LinkedIn">
 				<img src="./Images/linkedin-icon.png" alt="LinkedIn">
@@ -104,6 +111,11 @@
 			<a href="https://github.com/ewong5002" target="_blank" title="GitHub">
 				<img src="./Images/github-icon.png" alt="GitHub">
 			</a>
+		</div>
+
+		<!-- Copyright Disclaimer -->
+		<div class="copyright">
+			<p>&copy; 2025 Ethan Wong. All rights reserved.</p>
 		</div>
 	</footer>
 </body>

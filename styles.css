@@ -119,8 +119,13 @@ nav a:hover {
 
 /* Contact Section Styling*/
 #contact {
-	margin: 16px;
-	padding: 16px;
+	margin: 8px;
+	padding: 8px;
+}
+
+#contact p {
+	font-weight: bold;
+	font-style: italic;
 }
 
 /* Contact Form Styling*/

@@ -133,6 +133,7 @@ footer {
 .contacts img {
 	width: 80px;
 	height: auto;
+	background-color: #FFFFFF;
 	border: 3px solid #FFFFFF;
 	border-radius: 5px;
 }

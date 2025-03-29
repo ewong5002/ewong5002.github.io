@@ -9,9 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ethan Wong's Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
-
-	<!-- Email Functionality -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -77,39 +74,17 @@
 		</div>
 	</section>
 
-	<!-- Email -->
-	<section id="contact">
-		<div>
-			<p>Want to get in touch?</p>
-
-			<form id="contactForm">
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" placeholder="Your Name" required> <br>
-
-				<label for="subject">Subject</label>
-				<input type="text" id="subject" name="subject" placeholder="Your Subject" required> <br>
-
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" placeholder="Your Email" required> <br>
-
-				<label for="message">Message</label>
-				<textarea id="message" name="message" placeholder="Write your message here..." cols="35" rows="8" required></textarea>
-
-				<button onclick = "sendEmail()">Send Message</button>
-			</form>
-
-			<script src=".JavaScript/email.js" defer></script>
-		</div>
-	</section>
-
 	 <footer>
-		<!-- Social Links -->
-		<div class="socials">
+		<!-- Contacts -->
+		<div class="contacts">
 			<a href="https://www.linkedin.com/in/ethan-wong-0521b926a/" target="_blank" title="LinkedIn">
 				<img src="./Images/linkedin-icon.png" alt="LinkedIn">
 			</a>
 			<a href="https://github.com/ewong5002" target="_blank" title="GitHub">
 				<img src="./Images/github-icon.png" alt="GitHub">
+			</a>
+			<a href="mailto:ewong5002@gmail.com" target="_blank" title="Email">
+				<img src="./Images/gmail-icon.png" alt="Email">
 			</a>
 		</div>
 

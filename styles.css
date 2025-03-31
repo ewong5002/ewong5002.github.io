@@ -224,7 +224,6 @@ img {
 	border-radius: 5px;
 	overflow: auto;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 

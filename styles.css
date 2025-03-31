@@ -6,8 +6,14 @@
 	box-sizing: border-box;
 }
 
+/* Smooth Jump */
 html {
 	scroll-behavior: smooth;
+}
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+	display: none;
 }
 
 /* Tab Icon */
@@ -66,7 +72,7 @@ nav a:hover {
 	padding: 8px 20px;
 }
 
-/* Clean Link Jumps*/
+/* Clean Link Jumps */
 :target {
 	scroll-margin-top: 100px;
 }
@@ -114,6 +120,7 @@ img {
 	justify-content: center;
 }
 
+/* Profile Picture Styling */
 .profile-pic {
 	width: 150px;
 	height: 150px;
@@ -192,6 +199,7 @@ img {
 	border-radius: 3px;
 }
 
+/* Tech Used Styling */
 .tech {
 	margin: 10px 10px 0;
 	display: flex;
@@ -217,6 +225,7 @@ img {
 	max-width: 900px;
 }
 
+/* Center Contents Vertically */
 .experienced {
 	background-color: #686870;
 	padding: 30px;
